@@ -19,7 +19,7 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) => props.$bgColor};
+  background-color: ${(props) => props.theme.backgroundColor};
   width: 100px;
   height: 100px;
 `;
@@ -97,10 +97,10 @@ function App_styleComponentBasic() {
     <Wrap>
       <Title>Style Components Basic!!</Title>
       <Father>
-        <Box $bgColor="teal">
+        <Box>
           <Text>Hello</Text>
         </Box>
-        <Circle $bgColor="tomato" />
+        <Circle />
       </Father>
       <Space />
       <Father>
