@@ -1,13 +1,13 @@
 import styled, { keyframes } from 'styled-components';
 
 const Wrap = styled.div`
-  background-color: ${(props) => props.theme.backgroundColor};
+  background-color: ${({ theme }) => theme.$bgColor};
 `;
 
 const Title = styled.h1`
-  color: ${(props) => props.theme.textColor};
+  color: ${({ theme }) => theme.$textColor};
   text-align: center;
-  border-bottom: 1px solid ${(props) => props.theme.textColor};
+  border-bottom: 1px solid ${({ theme }) => theme.$textColor};
   padding: 10px 0;
 `;
 
@@ -19,7 +19,7 @@ const Box = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) => props.theme.backgroundColor};
+  background-color: ${({ theme }) => theme.$bgColor};
   width: 100px;
   height: 100px;
 `;
